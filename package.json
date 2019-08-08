@@ -1,0 +1,23 @@
+{
+  "name": "catchphrase",
+  "version": "1.0.0",
+  "description": "A catchphrase game.",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "build/*"
+    ],
+    "delay": "250",
+    "ext": "js,json,html,css"
+  }
+}
