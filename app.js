@@ -2,9 +2,6 @@ var coverArea = document.getElementById('coverArea')
 var totalCoverBoxes = 12
 
 var images = [
-	'https://media.giphy.com/media/elyGvaq6zHchR4kVpq/giphy.gif',
-	'http://www.mrbartonmaths.com/resources/Catchphrase/Pictures/image3.gif',
-	'https://pbs.twimg.com/media/Blrg_DeIQAAElUX.jpg',
 	'https://www.iaexperiment.com/wp-content/uploads/2016/08/Foot-in-the-door-02.png',
 	'https://www.heinzmarketing.com/wp-content/uploads/2017/08/A-watched-pot-never-boils.jpg',
 	'https://thumbs.dreamstime.com/z/as-dead-as-dodo-1489991.jpg',
