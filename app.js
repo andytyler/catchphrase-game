@@ -32,12 +32,12 @@ img.setAttribute(
 // cycle to next bg image and reset all cover boxes again
 var imageNumber = 0
 function changeImage() {
-	imageNumber++
 	var allCovers = document.getElementsByClassName('coverBoxClass')
 	for (i = 0; i < allCovers.length; i++) {
 		allCovers[i].classList.toggle('coverBoxClassHidden', false)
 	}
 	img.setAttribute('src', images[imageNumber])
+	imageNumber++
 }
 
 // remove box randomly
