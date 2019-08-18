@@ -13,7 +13,6 @@ phases:
 artifacts:
     type: zip
     files:
-        - package.json
         - app.js
         - node_modules/**/*
         - style.css
