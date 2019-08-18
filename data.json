@@ -1,0 +1,160 @@
+{
+	"categories": {
+		"standard": [
+			{
+				"image": "",
+				"phrase": "Drawing a Blank",
+				"meaning": "Failing to recall a memory. Unable to remember something.",
+				"points": 50
+			},
+			{
+				"image": "",
+				"phrase": "Wake Up Call",
+				"meaning": "An occurance of sorts that brings a problem to somebody's attention and they realize it needs fixing.",
+				"points": 40
+			},
+			{
+				"image": "",
+				"phrase": "Elephant in the Room",
+				"meaning": "Ignoring a large, obvious problem or failing to address an issue that stands out in a major way.",
+				"points": 30
+			},
+			{
+				"image": "",
+				"phrase": "Barking Up The Wrong Tree",
+				"meaning": "To make a wrong assumption about something.",
+				"points": 40
+			},
+			{
+				"image": "",
+				"phrase": "Shot In the Dark",
+				"meaning": "An attempt that has little chance for success.",
+				"points": 15
+			},
+			{
+				"image": "",
+				"phrase": "Head Over Heels",
+				"meaning": "Falling deeply in love with another person.",
+				"points": 40
+			}
+		],
+		"extra": [
+			{
+				"image": "",
+				"phrase": "Head Over Heels",
+				"meaning": "Falling deeply in love with another person.",
+				"points": 40
+			},
+			{
+				"image": "",
+				"phrase": "Flea Market",
+				"meaning": "A type of bazaar where inexpensive goods are sold or bartered.",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "A Piece of Cake",
+				"meaning": "A task that is simple to accomplish.",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "Needle In a Haystack",
+				"meaning": "Something that is impossible or extremely difficult to find, especially because the area you have to search is too large.",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "Roll With the Punches",
+				"meaning": "To tolerate or endure through the unexpected mishappenings you may encounter from time to time.",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "In a Pickle",
+				"meaning": "Being in a difficult predicament; a mess; an undesirable situation.",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "Burst Your Bubble",
+				"meaning": "To ruin someone's happy moment.",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "Dropping Like Flies",
+				"meaning": "To fall down ill or to die in large numbers.",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "Keep Your Eyes Peeled",
+				"meaning": "To be watchful; paying careful attention to something.",
+				"points": 10
+			}
+		],
+		"sexy": [
+			{
+				"image": "",
+				"phrase": "",
+				"meaning": "",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "",
+				"meaning": "",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "",
+				"meaning": "",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "",
+				"meaning": "",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "",
+				"meaning": "",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "",
+				"meaning": "",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "",
+				"meaning": "",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "",
+				"meaning": "",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "",
+				"meaning": "",
+				"points": 10
+			},
+			{
+				"image": "",
+				"phrase": "",
+				"meaning": "",
+				"points": 10
+			}
+		]
+	}
+}
