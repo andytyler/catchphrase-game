@@ -1,15 +1,6 @@
 version: 0.2
 
 phases:
-    install:
-        runtime-versions:
-            nodejs: 10
-        commands:
-            # Install dependencies needed for running tests
-            # Upgrade AWS CLI to the latest version
-    pre_build:
-        commands:
-            # Discover and run unit tests in the 'tests' directory
 artifacts:
     type: zip
     files:
