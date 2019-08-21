@@ -15,12 +15,7 @@ var images = [
 	'https://i.imgur.com/uGjyeQT.jpg',
 	'http://idiomic.com/wp-content/uploads/2016/12/idiomic_pickle_600.jpg',
 	'https://f4.bcbits.com/img/a3782539710_10.jpg',
-	'https://keystoneelderlaw.com/wp-content/uploads/2018/03/nest-egg.jpg',
-	'',
-	'',
-	'',
-	'',
-	''
+	'https://keystoneelderlaw.com/wp-content/uploads/2018/03/nest-egg.jpg'
 ]
 
 let img = document.getElementById('catchphraseImage')
