@@ -33,7 +33,15 @@ function changeImage() {
 	}
 	img.setAttribute('src', images[imageNumber])
 	imageNumber++
+	document.dispatchEvent(new CustomEvent('removeBoxes', {}))
 }
+
+document.addEventListener('removeBoxes', (ev) => {
+	for (i = 0; i < totalCoverBoxes; i++) {
+		removeRandomBox()
+	}
+	console.log(ev)
+})
 
 // remove box randomly
 function removeRandomBox() {
