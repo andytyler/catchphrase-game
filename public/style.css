@@ -72,9 +72,9 @@ a {
 #navBar {
 	background-color: rgb(246, 107, 9);
 	display: grid;
-	grid-template-columns: 10vw 10vw auto 10vw;
-	border-top: 2px white solid;
-	border-bottom: 6px rgb(255, 255, 255) solid;
+	grid-template-columns: 5% 5% auto 10%;
+	border-top: 2px whitesmoke solid;
+	border-bottom: 6px whitesmoke solid;
 }
 
 #displayArea {
