@@ -38,7 +38,7 @@ function changeImage() {
 
 document.addEventListener('removeBoxes', () => {
 	for (i = 0; i < totalCoverBoxes; i++) {
-		setTimeout(removeRandomBox,500)
+		setTimeout(removeRandomBox, 500)
 	}
 })
 
