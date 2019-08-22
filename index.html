@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<link rel="shortcut icon" type="image/ico" href="/public/favicon.ico" />
+	</head>
 	<header>
 		<link rel="stylesheet" href="/public/style.css" />
+
+		<!-- Compiled and minified CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	</header>
 
 	<body>
 		<div id="wrapper">
 			<div id="navBar">
-				<input
-				type="button"
-				value="REMOVE RANDOM"
-				onclick="removeRandomBox()"
-				/>
-				<img id="logoImg" src="./public/logo.png" alt="logo img">
-				<input
-				type="button"
-				value="NEXT >"
-				onclick="changeImage()"
-				/>
+				<a
+					class="btn waves-effect waves-light purple"
+					onclick="removeRandomBoxs(300)"
+					>Remove</a
+				>
+				<img id="logoImg" src="/public/logo.png" alt="logo img" />
+				<a
+					class="btn waves-effect waves-light purple"
+					onclick="changeImage()"
+					>Skip ></a
+				>
 			</div>
 			<div id="displayArea">
 				<div id="coverArea"></div>
 				<img id="catchphraseImage" />
 			</div>
 		</div>
-		
-		
+
 		<script type="text/javascript" src="/public/app.js"></script>
 	</body>
 </html>
