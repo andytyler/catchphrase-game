@@ -1,6 +1,8 @@
 var coverArea = document.getElementById('coverArea')
-var totalCoverBoxes = 12
+var totalCoverBoxes = 100
 var imageNumber = 1
+var startDelay = 5
+var rateOfDecay = 2
 
 var images = [
 	'https://www.iaexperiment.com/wp-content/uploads/2016/08/Foot-in-the-door-02.png',
@@ -40,7 +42,18 @@ function changeImage() {
 	imageNumber++
 	console.log('change image called')
 
-	removeRandomBoxs(500)
+	removeRandomBoxs(startDelay)
+}
+
+function clearAllBoxes() {
+	var allCovers = document.getElementsByClassName('coverBoxClass')
+
+	var allVisibleCovers = Array.from(allCovers).filter(
+		element => !element.classList.contains('coverBoxClassHidden')
+	)
+	allVisibleCovers.forEach(box => {
+		box.classList.toggle('coverBoxClassHidden', true)
+	})
 }
 
 function removeRandomBoxs(delay) {
@@ -56,10 +69,14 @@ function removeRandomBoxs(delay) {
 		Math.random() * Math.floor(allVisibleCovers.length)
 	)
 	console.log(allVisibleCovers[randomBoxNum])
-
-	allVisibleCovers[randomBoxNum].classList.toggle('coverBoxClassHidden', true)
+	if (allVisibleCovers.length > 0) {
+		allVisibleCovers[randomBoxNum].classList.toggle(
+			'coverBoxClassHidden',
+			true
+		)
+	}
 	if (allVisibleCovers.length > 1) {
-		setTimeout(removeRandomBoxs, delay, delay + 100)
+		setTimeout(removeRandomBoxs, delay, delay + rateOfDecay)
 	}
 }
 

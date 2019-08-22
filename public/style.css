@@ -64,15 +64,17 @@ a {
 	position: fixed;
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 5vh 95vh;
+	grid-template-rows: 7vh 93vh;
 	height: 100vh;
 	width: 100vw;
 }
 
 #navBar {
-	background-color: rgb(219, 220, 219);
+	background-color: rgb(246, 107, 9);
 	display: grid;
-	grid-template-columns: 20vw auto 20vw;
+	grid-template-columns: 10vw 10vw auto 10vw;
+	border-top: 2px white solid;
+	border-bottom: 6px rgb(255, 255, 255) solid;
 }
 
 #displayArea {
@@ -89,7 +91,7 @@ a {
 	z-index: 1;
 	grid-gap: 0px;
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
 }
 
 #catchphraseImage {
