@@ -9,7 +9,7 @@ const appHTML = fs.readFileSync(appHTMLPath, 'utf8')
 const app = express()
 
 app.get('/', (req, res) => res.send(appHTML))
-app.use('/static',express.static('public'))
+app.use('/public',express.static('public'))
 
 
 app.listen(PORT, (err, ok) => {
