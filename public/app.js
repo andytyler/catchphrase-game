@@ -1,5 +1,6 @@
 var coverArea = document.getElementById('coverArea')
 var totalCoverBoxes = 12
+var imageNumber = 1
 
 var images = [
 	'https://www.iaexperiment.com/wp-content/uploads/2016/08/Foot-in-the-door-02.png',
@@ -19,13 +20,17 @@ var images = [
 ]
 
 let img = document.getElementById('catchphraseImage')
-img.setAttribute(
-	'src',
-	'https://vignette.wikia.nocookie.net/logopedia/images/9/9b/Catchphrase_%283%29.jpg/revision/latest?cb=20140727190104'
-)
+img.setAttribute('src', images[0])
 
-// cycle to next bg image and reset all cover boxes again
-var imageNumber = 0
+for (i = 0; i < totalCoverBoxes; i++) {
+	console.log('adding a coverbox')
+
+	let coverBox = document.createElement('div')
+	coverBox.addEventListener('click', removeBox, false)
+	coverBox.className = 'coverBoxClass'
+	coverArea.appendChild(coverBox)
+}
+
 function changeImage() {
 	var allCovers = document.getElementsByClassName('coverBoxClass')
 	for (i = 0; i < allCovers.length; i++) {
@@ -33,31 +38,29 @@ function changeImage() {
 	}
 	img.setAttribute('src', images[imageNumber])
 	imageNumber++
-	document.dispatchEvent(new CustomEvent('removeBoxes'))
+	console.log('change image called')
+
+	removeRandomBoxs(500)
 }
 
-document.addEventListener('removeBoxes', () => {
-	for (i = 0; i < totalCoverBoxes; i++) {
-		setTimeout(removeRandomBox, 500)
-	}
-})
+function removeRandomBoxs(delay) {
+	console.log('DELAY**:', delay)
 
-// remove box randomly
-function removeRandomBox() {
 	var allCovers = document.getElementsByClassName('coverBoxClass')
-	allCovers = Array.from(allCovers).filter(
+
+	var allVisibleCovers = Array.from(allCovers).filter(
 		element => !element.classList.contains('coverBoxClassHidden')
 	)
-	let randomBoxNum = Math.floor(Math.random() * Math.floor(allCovers.length))
-	allCovers[randomBoxNum].classList.toggle('coverBoxClassHidden', true)
-}
+	console.log('la covers', allVisibleCovers)
+	let randomBoxNum = Math.floor(
+		Math.random() * Math.floor(allVisibleCovers.length)
+	)
+	console.log(allVisibleCovers[randomBoxNum])
 
-//creating the coverboxes
-for (i = 0; i < totalCoverBoxes; i++) {
-	let coverBox = document.createElement('div')
-	coverBox.addEventListener('click', removeBox, false)
-	coverBox.className = 'coverBoxClass'
-	coverArea.appendChild(coverBox)
+	allVisibleCovers[randomBoxNum].classList.toggle('coverBoxClassHidden', true)
+	if (allVisibleCovers.length > 1) {
+		setTimeout(removeRandomBoxs, delay, delay + 100)
+	}
 }
 
 function removeBox(event) {

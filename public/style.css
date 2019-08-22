@@ -49,16 +49,10 @@ h1 {
 	font-size: 12vh;
 }
 
-input {
-	margin: 1vh 1vh;
+a {
+	margin: auto;
 	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: rgb(161, 0, 230);
-	font-size: 2vh;
-	padding: 1vh 1vw;
-	border-radius: 2vh;
 	font-weight: bold;
-	border: 2px solid whitesmoke;
 }
 
 #logoImg {
@@ -70,7 +64,7 @@ input {
 	position: fixed;
 	display: grid;
 	grid-template-columns: auto;
-	grid-template-rows: 7vh 93vh;
+	grid-template-rows: 5vh 95vh;
 	height: 100vh;
 	width: 100vw;
 }
