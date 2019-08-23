@@ -5,15 +5,18 @@ var startDelay = 5
 var rateOfDecay = 2
 
 var images = []
-
-fetch('https://ibnibvvcs7.execute-api.eu-west-1.amazonaws.com/Prod/hello/')
-	.then(res => {
-		const json = res.json()
-		images = json.catchphrases
-	})
-
 let img = document.getElementById('catchphraseImage')
-img.setAttribute('src', images[0])
+
+
+async function setUpPage() {
+	const response = await fetch('https://ibnibvvcs7.execute-api.eu-west-1.amazonaws.com/Prod/hello/', {})
+	const json = await response.json()
+	images = await json.catchphrases
+
+	img.setAttribute('src', images[0])
+}
+
+setUpPage()
 
 for (i = 0; i < totalCoverBoxes; i++) {
 	console.log('adding a coverbox')
