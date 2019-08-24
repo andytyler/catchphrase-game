@@ -71,7 +71,7 @@ a {
 }
 
 #navBar {
-	background-color: rgb(96, 246, 9);
+	background-color: rgb(9, 211, 246);
 	display: grid;
 	grid-template-columns: 10% 10% auto 10%;
 	border-top: 2px whitesmoke solid;
