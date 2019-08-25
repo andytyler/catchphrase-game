@@ -1,0 +1,61 @@
+html {
+	margin: 0px 0px;
+	padding: 0px 0px;
+	display: fixed;
+}
+body {
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+#wrapper {
+	position: fixed;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
+	height: 100vh;
+	width: 100vw;
+	background-image: url('/public/cover-box-square.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#formDiv {
+	display: inline-grid;
+	width: 50%;
+	height: 50%;
+	margin: auto;
+	background-color: rgba(140, 0, 255, 0.431);
+	border: 3px solid rgba(255, 255, 255, 0.8);
+	font-size: 30px;
+	border-radius: 15px 15px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+input {
+	height: 50%;
+	margin: auto;
+}
+
+
+h1 {
+	margin: auto auto;
+	font-family: Helvetica, sans-serif;
+	font-size: 5vh;
+}
+
+#logoImg {
+	max-height: 5vh;
+	margin: auto;
+}
+
+
+#navBar {
+	background-color: rgb(255, 225, 177);
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	border-top: 2px whitesmoke solid;
+	border-bottom: 6px whitesmoke solid;
+}
