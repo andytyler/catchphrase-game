@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GG Sign In</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./signin.css">
+</head>
+
+<body>
+  <div id="navBar">
+    
+    <img id="logoImg" src="/public/logo.png" alt="logo img" />
+    <a role="button" href="/" class="pill grid-item btn btn-primary">Catchphrases or Gifs</a>
+    <a role="button" href="/profile" class="pill grid-item btn btn-primary">Profile</a>
+  </div>
+  
+  <div id="wrapper">
+    <form id="formDiv" action="submit">
+      <h1 class="grid-item">Sign In</h1>
+      <label class="pill grid-item" for="username">Username:</label> <input id="username" class="pill grid-item" type="text">
+      <label class="pill grid-item" for="password">Password:</label> <input id="password" class="pill grid-item" type="text">
+      <input class="pill grid-item btn-lg btn btn-primary" type="button" value="Submit">
+    </form>
+    <form id="formDiv" action="submit">
+      <h1 class="grid-item">Sign UP</h1>
+      <label class="pill grid-item" for="upUsername">Username:</label> <input id="upUsername" class="pill grid-item" type="text">
+      <label class="pill grid-item" for="upPassword">Password:</label> <input id="upPassword" class="pill grid-item" type="text">
+      <input class="pill grid-item btn-lg btn btn-primary" type="button" value="Submit">
+    </form>
+  </div>
+</body>
+
+</html>

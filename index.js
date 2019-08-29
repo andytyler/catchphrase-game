@@ -11,6 +11,7 @@ const app = express()
 app.get('/', (req, res) => res.send(appHTML))
 app.use('/public', express.static('public'))
 app.use('/profile', express.static('profile'))
+app.use('/signin', express.static('signin'))
 
 app.listen(PORT, (err, ok) => {
   if (err) {

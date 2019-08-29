@@ -16,10 +16,7 @@
     "nodemon": "^1.19.1"
   },
   "nodemonConfig": {
-    "ignore": [
-      "build/*"
-    ],
-    "delay": "250",
+    "delay": "100",
     "ext": "js,json,html,css"
   }
 }
