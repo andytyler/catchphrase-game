@@ -12,10 +12,10 @@ body {
 	position: fixed;
 	display: grid;
 	grid-template-columns: auto auto;
-	grid-template-rows: auto;
+	grid-template-rows: 20% auto;
 	height: 100vh;
 	width: 100vw;
-	background-image: url('/public/cover-box-square.png');
+	background-image: url('/signin/g-background.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -44,6 +44,11 @@ body {
 	grid-template-columns: 20% auto auto;
 	border-top: 2px whitesmoke solid;
 	border-bottom: 6px whitesmoke solid;
+}
+
+#title {
+	grid-column-start: 1;
+	grid-column-end: span 2;
 }
 
 .grid {
