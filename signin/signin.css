@@ -39,7 +39,7 @@ body {
 }
 
 #navBar {
-	background-color: rgb(255, 225, 177);
+	background-color: rgb(170, 42, 255);
 	display: grid;
 	grid-template-columns: 20% auto auto;
 	border-top: 2px whitesmoke solid;
