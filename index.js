@@ -9,14 +9,12 @@ const appHTML = fs.readFileSync(appHTMLPath, 'utf8')
 const app = express()
 
 app.get('/', (req, res) => res.send(appHTML))
-app.use('/public',express.static('public'))
-
+app.use('/public', express.static('public'))
+app.use('/profile', express.static('profile'))
 
 app.listen(PORT, (err, ok) => {
-    if (err) {
-        return console.error("Not working - unable to start server");
-    }
-    console.log(`Working - Listening on: http://localhost:${PORT}`);
+  if (err) {
+    return console.error('Not working - unable to start server')
+  }
+  console.log(`Working - Listening on: http://localhost:${PORT}`)
 })
-
-
