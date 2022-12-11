@@ -13,7 +13,7 @@
   "dependencies": {
     "amazon-cognito-identity-js": "^3.0.15",
     "browser-sync": "^2.26.7",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "materialize-css": "^1.0.0-rc.2",
     "nodemon": "^1.19.1",
     "reload": "^3.0.1"
